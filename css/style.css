@@ -1,0 +1,2493 @@
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@300;500;700&display=swap');
+
+:root {
+  --verde-scuro: rgba(4, 64, 27, 1);
+  --bianco: #ffffff;
+  --font-clash: 'Clash Display', sans-serif;
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-clash);
+  overflow-x: hidden; 
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  color: var(--bianco);
+  padding: 0;
+}
+
+.navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.navigazione p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.navigazione p a {
+  color: var(--bianco);
+  text-decoration: none;
+}
+
+.navigazione p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigazione ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigazione ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--bianco);
+  text-decoration: none;
+  text-transform: none; 
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navigazione ul li a:hover {
+  color: rgb(175, 175, 175);
+  transform: scale(1.1);
+}
+
+.navigazione ul img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 40px; 
+}
+
+.immagine {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.immagine img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 124px auto 0 auto;
+}
+
+.immagine h1 {
+  position: absolute;
+  top: 210px;       
+  left: 100px;      
+  font-size: 115px;
+  font-weight: 500;
+  color: var(--bianco);
+  text-align: left;
+  line-height: 0.4;
+  white-space: pre-line;
+}
+
+.immagine h2 {
+  position: absolute;
+  bottom: 30px;    
+  right: 100px;   
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--bianco);
+  text-align: right;
+  line-height: 0.5;
+  white-space: pre-line;
+}
+
+main {
+  background-color: rgba(234, 200, 166, 1);
+  padding: 60px 20px;
+}
+
+.parchi-in-primo-piano {
+  max-width: 1200px;
+  margin: 120px auto 0 auto; 
+  text-align: center;
+}
+
+.parchi-in-primo-piano h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.card-parchi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.card {
+  background-color: rgba(4, 64, 27, 1);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card a {
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extra-content {
+  display: flex;
+  align-items: center; 
+  gap: 300px; 
+  margin-top: 250px; 
+  margin-bottom: 750px; 
+  flex-direction: row-reverse; 
+}
+
+.extra-content img {
+  width: 800px; 
+  height: 800px; 
+  object-fit: cover;
+  flex-grow: 0; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.extra-content img:hover {
+  transform: translateY(-5px); 
+}
+
+.extra-content p {
+  font-size: 32px;
+  line-height: 1;
+  color: black;
+  max-width: 600px;
+  text-align: left; 
+}
+
+footer {
+  width: 100%; 
+  height: 700px; 
+  background-color: var(--verde-scuro); 
+  color: var(--bianco); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+footer .footer-top {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 10px; 
+}
+
+footer p {
+  margin: 5px 0; 
+  transition: color 0.3s ease; 
+}
+
+footer nav ul {
+  list-style: none; 
+  padding: 0;
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+footer nav ul li {
+  display: block; 
+}
+
+footer nav ul li a {
+  color: var(--bianco); 
+  text-decoration: none; 
+  font-size: 140px; 
+  font-weight: 500; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+footer nav ul li a:hover,
+footer p:hover {
+  color: rgb(175, 175, 175); 
+  transform: scale(1.1); 
+}
+
+footer p:last-child {
+  text-align: center; 
+  margin-top: auto; 
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+  body, html {
+    font-size: 14px;
+  }
+
+  .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .navigazione ul {
+    flex-direction: row;
+    gap: 3px; 
+  }
+
+  .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  header {
+    height: 400px; 
+  }
+
+  .immagine img {
+    width: 80%;
+    max-width: 80%;
+    height: auto; 
+    margin-top: 50px; 
+  }
+
+  .immagine h1 {
+    font-size: 32px; 
+    top: 120px;
+    left: 20px;
+    line-height: 0.5;
+  }
+
+  .immagine h2 {
+    font-size: 18px; 
+    bottom: 20px;
+    right: 20px;
+    line-height: 0.5;
+  }
+
+  .card-parchi {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .extra-content {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    gap: 40px;
+  }
+
+  .extra-content img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .extra-content p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .footer-top {
+    align-items: center;
+  }
+
+  footer nav ul {
+    align-items: center;
+  }
+
+  footer nav ul li a {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/* CSS PAGINA PARCO */
+:root {
+  --verde-scuro: rgba(4, 64, 27, 1);
+  --bianco: #ffffff;
+  --font-clash: 'Clash Display', sans-serif;
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-clash);
+  overflow-x: hidden; 
+}
+
+body.parchi header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  color: var(--bianco);
+  padding: 0;
+}
+
+body.parchi .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+body.parchi .navigazione p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+body.parchi .navigazione p a {
+  color: var(--bianco);
+  text-decoration: none;
+}
+
+body.parchi .navigazione p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body.parchi .navigazione ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.parchi .navigazione ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--bianco);
+  text-decoration: none;
+  text-transform: none; 
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+body.parchi .navigazione ul li a:hover {
+  color: rgb(175, 175, 175);
+  transform: scale(1.1);
+}
+
+body.parchi .navigazione ul img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 40px; 
+}
+
+body.parchi .immagine {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+body.parchi .immagine img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+body.parchi .immagine h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 1;
+  white-space: pre-line;
+  margin: 0;
+}
+
+body.parchi .immagine h2,
+body.parchi .immagine h3 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+}
+
+body.parchi .immagine h2 {
+  bottom: 149px; 
+  left: 90px; 
+  font-size: 45px;
+  font-weight: 500;
+}
+
+body.parchi .immagine h3 {
+  bottom: 90px;
+  left: 90px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+Main/
+/* Gruppo principale centrato */
+.parchi-in-primo-piano.intro-parchi {
+  display: flex;
+  flex-direction: column; /* Mettiamo i gruppi uno sopra l'altro */
+  align-items: center; /* Centra gli elementi orizzontalmente */
+  justify-content: center; /* Centra gli elementi verticalmente */
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; /* Garantiamo che il contenuto occupi almeno tutta l'altezza della pagina */
+}
+
+/* Prima parte: immagine centrata */
+.parchi-in-primo-piano.intro-parchi > div:first-child {
+  display: flex;
+  flex-direction: column; /* L'immagine sopra il testo */
+  align-items: center; /* Centra l'immagine e il testo orizzontalmente */
+  justify-content: center; /* Centra il tutto verticalmente */
+  gap: 20px; /* Distanza tra immagine e testo */
+  margin-bottom: 20px; /* Distanza tra l'immagine e il testo */
+}
+
+.parchi-in-primo-piano.intro-parchi > div:first-child img {
+  width: 100%;
+  max-width: 100vw; /* Immagine che copre tutta la larghezza dello schermo */
+  max-height: 500px; /* Altezza massima di 500px */
+  object-fit: cover; /* Adatta l'immagine senza deformarla */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animazione al passaggio del mouse sull'immagine */
+.parchi-in-primo-piano.intro-parchi > div:first-child img:hover {
+  transform: scale(1.05); /* Effetto zoom */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Testo centrato sotto l'immagine */
+.parchi-in-primo-piano.intro-parchi > div:first-child h1,
+.parchi-in-primo-piano.intro-parchi > div:first-child h2,
+.parchi-in-primo-piano.intro-parchi > div:first-child h3 {
+  text-align: center; /* Testo centrato */
+  color: var(--bianco);
+}
+
+.parchi-in-primo-piano.intro-parchi > div:first-child h1 {
+  font-size: 100px;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+.parchi-in-primo-piano.intro-parchi > div:first-child h2 {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.parchi-in-primo-piano.intro-parchi > div:first-child h3 {
+  font-size: 100px;
+  font-weight: 300;
+}
+
+/* Seconda parte: lista dei parchi centrata */
+.parchi-in-primo-piano.intro-parchi > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la lista orizzontalmente */
+  justify-content: center; /* Centra verticalmente la lista */
+  gap: 20px; /* Distanza tra gli elementi */
+  margin-top: 100px; /* Distanza sopra la lista */
+  margin-bottom: 200px; /* Distanza sopra la lista */
+}
+
+.parchi-in-primo-piano.intro-parchi > div:last-child h2,
+.parchi-in-primo-piano.intro-parchi > div:last-child h3 {
+  margin-bottom: 10px; /* Riduci lo spazio sotto i titoli */
+}
+
+/* Lista dei parchi */
+.parchi-in-primo-piano.intro-parchi > div:last-child ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centra il testo della lista */
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Animazione di fade-in */
+  margin-top: 0; /* Elimina lo spazio sopra la lista */
+}
+
+/* Elementi della lista */
+.parchi-in-primo-piano.intro-parchi > div:last-child ul li {
+  font-size: 18px;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.parchi-in-primo-piano.intro-parchi > div:last-child ul li a {
+  text-decoration: none;
+  color: var(--verde-scuro);
+  transition: color 0.3s ease;
+}
+
+.parchi-in-primo-piano.intro-parchi > div:last-child ul li:hover {
+  transform: translateX(5px); /* Effetto al passaggio del mouse */
+  color: rgb(175, 175, 175);
+}
+
+.parchi-in-primo-piano.intro-parchi > div:last-child ul li a:hover {
+  color: rgb(175, 175, 175);
+}
+
+/* Animazione per la lista (fade-in) */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  body.parchi {
+    font-size: 14px;
+  }
+
+  /* Navigazione mobile */
+  body.parchi .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.parchi .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.parchi .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.parchi .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.parchi .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Header per la pagina parchi */
+  body.parchi header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.parchi .immagine {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 50px auto 0; /* centra il contenitore */
+  }
+  
+  body.parchi .immagine img {
+    width: 100%;
+    height: auto;
+  }
+  
+  body.parchi .immagine h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+  
+  body.parchi .immagine h2,
+  body.parchi .immagine h3 {
+    position: absolute;
+    left: 0px; /* margine sinistro ridotto */
+    color: var(--bianco);
+    text-align: left;
+  }
+  
+  body.parchi .immagine h2 {
+    bottom: 70px; /* h2 sopra */
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  body.parchi .immagine h3 {
+    bottom: 40px; /* h3 sotto */
+    font-size: 10px;
+    line-height: 1;
+  }
+  
+
+  body.parchi .card-parchi {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  body.parchi .extra-content {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    gap: 40px;
+  }
+
+  body.parchi .extra-content img {
+    width: 100%;
+    height: 300px;
+  }
+
+  body.parchi .extra-content p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  body.parchi footer {
+    height: auto;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  body.parchi footer .footer-top {
+    align-items: center;
+  }
+
+  body.parchi footer nav ul {
+    align-items: center;
+  }
+
+  body.parchi footer nav ul li a {
+    font-size: 20px;
+  }
+
+  body.parchi footer p {
+    font-size: 14px;
+  }
+}
+
+/* ATTIVITA */
+body.attivita header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  color: var(--bianco);
+  padding: 0;
+}
+
+body.attivita .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+body.attivita .navigazione p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body.attivita .navigazione p a {
+  color: var(--bianco);
+  text-decoration: none;
+}
+
+body.attivita .navigazione ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.attivita .navigazione ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--bianco);
+  text-decoration: none;
+  text-transform: none; 
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+body.attivita .navigazione ul li a:hover {
+  color: rgb(175, 175, 175);
+  transform: scale(1.1);
+}
+
+body.attivita .navigazione ul img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 40px; 
+}
+
+body.attivita .immagine-attivita {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+body.attivita .immagine-attivita img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+body.attivita .immagine-attivita h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 1;
+  white-space: pre-line;
+  margin: 0;
+}
+
+body.attivita .immagine-attivita h2 {
+position: absolute;
+color: var(--bianco);
+text-align: left;
+margin: 0;
+max-width: 1000px; /* compatta il testo */
+}
+
+body.attivita .immagine-attivita h3 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+  max-width: 650px; /* compatta il testo */
+}
+
+body.attivita .immagine-attivita h2 {
+  bottom: 108px; 
+  left: 90px; 
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+body.attivita .immagine-attivita h3 {
+  bottom: 60px;
+  left: 90px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+/* MAIN */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attività {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.attività img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 90px; /* Aggiungi un margine superiore */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attività img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.testo-attività {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 26px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.testo-attività p {
+  margin-bottom: 1.5rem;
+}
+
+.tipologie-attività {
+  max-width: 1200px; /* Testo più largo */
+  margin-top: 50px ; /* Margine top e bottom ampio */
+  margin-bottom: 350px;
+  padding: 0 20px;
+  color: black; /* Testo nero */
+  animation: fadeIn 1s ease both; /* Animazione di comparsa */
+}
+
+.tipologie-attività h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.tipologie-attività h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.tipologie-attività h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* Linea separatrice */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tipologie-attività ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tipologie-attività ul li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: fadeIn 1s ease both;
+}
+
+/* Hover sugli elementi della lista */
+.tipologie-attività ul li:hover {
+  transform: translateX(5px); /* Effetto spostamento */
+  color: rgb(175, 175, 175);
+}
+
+/* Animazione fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stile generale per il body */
+  body.attivita {
+    font-size: 14px;
+  }
+
+  /* NAVIGAZIONE */
+  body.attivita .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.attivita .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.attivita .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.attivita .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.attivita .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* HEADER */
+  body.attivita header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.attivita .immagine-attivita {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 50px auto 0; /* centra l'immagine */
+    padding: 0;
+  }
+
+  body.attivita .immagine-attivita img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  body.attivita .immagine-attivita h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+
+  body.attivita .immagine-attivita h2,
+  body.attivita .immagine-attivita h3 {
+    position: absolute;
+    left: -10px;
+    color: var(--bianco);
+    text-align: left;
+  }
+
+  body.attivita .immagine-attivita h2 {
+    bottom: 45px;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  body.attivita .immagine-attivita h3 {
+    bottom: 20px;
+    font-size: 10px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* MAIN */
+  main {
+    padding: 1rem;
+  }
+
+  .attività {
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .attività img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 8px;
+    margin-top: 60px;
+    object-fit: cover;
+  }
+
+  .testo-attività {
+    max-width: 90%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.2;
+    color: black;
+  }
+
+  .testo-attività p {
+    margin-bottom: 1rem;
+  }
+
+  .tipologie-attività {
+    max-width: 90%;
+    margin-top: 40px;
+    margin-bottom: 180px;
+    padding: 0 10px;
+    text-align: center;
+    color: black;
+    animation: fadeIn 1s ease both;
+  }
+
+  .tipologie-attività h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .tipologie-attività h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .tipologie-attività h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+
+  .tipologie-attività ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .tipologie-attività ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: fadeIn 1s ease both;
+  }
+
+  .tipologie-attività ul li:hover {
+    transform: translateX(5px);
+    color: rgb(175, 175, 175);
+  }
+
+  /* Animazione fadeIn */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+ETNA
+/* Navigazione pagina Parco dell'Etna */
+.etna .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Header pagina Parco dell'Etna */
+.etna header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--bianco);
+  padding: 0;
+}
+
+.etna .immagine-etna {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.etna .immagine-etna img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.etna .immagine-etna h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 0.8;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.etna .immagine-etna h2 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+  max-width: 1000px;
+  bottom: 50px;
+  left: 70px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.etna .etna-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.etna .etna-main .sezione-parco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.etna .etna-main .sezione-parco .testo {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 20px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.etna .etna-main .sezione-parco img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 90px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etna .etna-main .sezione-parco img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.etna .etna-main h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: -70px;
+  position: relative;
+  text-align: left;
+}
+
+.etna .etna-main h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.etna .etna-main .testo p {
+  margin-bottom: 1.2rem;
+  max-width: 880px;
+}
+
+.etna .etna-main .sezione-parco .testo:last-child {
+  margin-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+  /* Stile generale per il body */
+  body.etna {
+    font-size: 14px;
+  }
+
+  /* NAVIGAZIONE */
+  body.etna .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.etna .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.etna .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.etna .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.etna .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* HEADER */
+  body.etna header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.etna .immagine-etna {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 50px auto 0;
+    padding: 0;
+  }
+
+  body.etna .immagine-etna img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  body.etna .immagine-etna h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+
+  body.etna .immagine-etna h2 {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--bianco);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 1rem; /* font piccolo come "Attività" */
+    padding: 20px;
+  }
+
+  main > * {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main h1, main h2, main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Titoli centrati */
+  }
+
+  main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify; /* Testo giustificato */
+  }
+
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+Sila
+/* Navigazione pagina Parco della Sila */
+.sila .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Header pagina Parco della Sila */
+.sila header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--bianco);
+  padding: 0;
+}
+
+.sila .immagine-sila {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.sila .immagine-sila img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.sila .immagine-sila h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 0.8;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.sila .immagine-sila h2 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+  max-width: 800px;
+  bottom: 50px;
+  left: 70px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.sila .sila-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sila .sila-main .sezione-parco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.sila .sila-main .sezione-parco .testo {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 20px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.sila .sila-main .sezione-parco img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 90px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sila .sila-main .sezione-parco img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sila .sila-main h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: -70px;
+  position: relative;
+  text-align: left;
+}
+
+.sila .sila-main h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.sila .sila-main .testo p {
+  margin-bottom: 1.2rem;
+  max-width: 880px;
+}
+
+.sila .sila-main .sezione-parco .testo:last-child {
+  margin-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+  /* Stile generale per il body */
+  body.sila {
+    font-size: 14px;
+  }
+
+  /* NAVIGAZIONE */
+  body.sila .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.sila .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.sila .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.sila .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.sila .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* HEADER */
+  body.sila header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.sila .immagine-sila {
+    position: relative;
+    width: 72%;
+    max-width: 72%;
+    margin: 50px auto 0;
+    padding: 0;
+  }
+
+  body.sila .immagine-sila img {
+    width: 100%; /* Adatta a 100% della larghezza */
+    height: auto; /* Mantiene l'altezza automatica per l'header */
+    object-fit: cover;
+  }
+
+  body.sila .immagine-sila h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+
+  body.sila .immagine-sila h2 {
+    position: absolute;
+    left: -20px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--bianco);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 1rem; /* font piccolo come "Attività" */
+    padding: 20px;
+  }
+
+  main > * {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main h1, main h2, main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Titoli centrati */
+  }
+
+  main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify; /* Testo giustificato */
+  }
+
+  /* Modifica per le immagini solo nel main */
+  main img {
+    max-width: 100%;
+    height: 300px; /* Altezza fissa per tutte le immagini nel main */
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+}
+
+LAZIO
+/* Navigazione pagina Parco del Lazio */
+.lazio .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Header pagina Parco del Lazio */
+.lazio header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--bianco);
+  padding: 0;
+}
+
+.lazio .immagine-lazio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.lazio .immagine-lazio img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.lazio .immagine-lazio h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 0.8;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.lazio .immagine-lazio h2 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+  max-width: 1000px;
+  bottom: 90px;
+  left: 70px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.lazio .lazio-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazio .lazio-main .sezione-parco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.lazio .lazio-main .sezione-parco .testo {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 20px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.lazio .lazio-main .sezione-parco img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 90px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lazio .lazio-main .sezione-parco img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.lazio .lazio-main h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: -70px;
+  position: relative;
+  text-align: left;
+}
+
+.lazio .lazio-main h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.lazio .lazio-main .testo p {
+  margin-bottom: 1.2rem;
+  max-width: 880px;
+}
+
+.lazio .lazio-main .sezione-parco .testo:last-child {
+  margin-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+  /* Stile generale per il body */
+  body.lazio {
+    font-size: 14px;
+  }
+
+  /* NAVIGAZIONE */
+  body.lazio .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.lazio .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.lazio .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.lazio .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.lazio .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* HEADER */
+  body.lazio header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.lazio .immagine-lazio {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 50px auto 0;
+    padding: 0;
+  }
+
+  body.lazio .immagine-lazio img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  body.lazio .immagine-lazio h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+
+  body.lazio .immagine-lazio h2 {
+    position: absolute;
+    left: -10px;
+    bottom: 30px;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--bianco);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 1rem; /* font piccolo come "Attività" */
+    padding: 20px;
+  }
+
+  main > * {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main h1, main h2, main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Titoli centrati */
+  }
+
+  main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify; /* Testo giustificato */
+  }
+
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+TOSCANA
+/* Navigazione pagina Parco dell'Etna */
+.toscana .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Header pagina Parco dell'Etna */
+.toscana header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--bianco);
+  padding: 0;
+}
+
+.toscana .immagine-toscana {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.toscana .immagine-toscana img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.toscana .immagine-toscana h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 0.8;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.toscana .immagine-toscana h2 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+  max-width: 1000px;
+  bottom: 50px;
+  left: 70px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.toscana .toscana-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.toscana .toscana-main .sezione-parco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.toscana .toscana-main .sezione-parco .testo {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 20px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.toscana .toscana-main .sezione-parco img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 90px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.toscana .toscana-main .sezione-parco img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.toscana .toscana-main h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: -70px;
+  position: relative;
+  text-align: left;
+}
+
+.toscana .toscana-main h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.toscana .toscana-main .testo p {
+  margin-bottom: 1.2rem;
+  max-width: 880px;
+}
+
+.toscana .toscana-main .sezione-parco .testo:last-child {
+  margin-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+  /* Stile generale per il body */
+  body.toscana {
+    font-size: 14px;
+  }
+
+  /* NAVIGAZIONE */
+  body.toscana .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.toscana .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.toscana .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.toscana .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.toscana .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* HEADER */
+  body.toscana header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.toscana .immagine-toscana {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 50px auto 0;
+    padding: 0;
+  }
+
+  body.toscana .immagine-toscana img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  body.toscana .immagine-toscana h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+
+  body.toscana .immagine-toscana h2 {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--bianco);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 1rem; /* font piccolo come "Attività" */
+    padding: 20px;
+  }
+
+  main > * {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main h1, main h2, main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Titoli centrati */
+  }
+
+  main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify; /* Testo giustificato */
+  }
+
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+Vesuvio
+/* Navigazione pagina Parco del Vesuvio */
+.vesuvio .navigazione {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Header pagina Parco del Vesuvio */
+.vesuvio header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--verde-scuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--bianco);
+  padding: 0;
+}
+
+.vesuvio .immagine-vesuvio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.vesuvio .immagine-vesuvio img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.vesuvio .immagine-vesuvio h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: var(--bianco);
+  text-align: center;
+  line-height: 0.8;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.vesuvio .immagine-vesuvio h2 {
+  position: absolute;
+  color: var(--bianco);
+  text-align: left;
+  margin: 0;
+  max-width: 1000px;
+  bottom: 50px;
+  left: 70px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.vesuvio .vesuvio-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vesuvio .vesuvio-main .sezione-parco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.vesuvio .vesuvio-main .sezione-parco .testo {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 20px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.vesuvio .vesuvio-main .sezione-parco img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 90px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vesuvio .vesuvio-main .sezione-parco img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vesuvio .vesuvio-main h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: -70px;
+  position: relative;
+  text-align: left;
+}
+
+.vesuvio .vesuvio-main h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.vesuvio .vesuvio-main .testo p {
+  margin-bottom: 1.2rem;
+  max-width: 880px;
+}
+
+.vesuvio .vesuvio-main .sezione-parco .testo:last-child {
+  margin-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+  /* Stile generale per il body */
+  body.vesuvio {
+    font-size: 14px;
+  }
+
+  /* NAVIGAZIONE */
+  body.vesuvio .navigazione {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  body.vesuvio .navigazione p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  body.vesuvio .navigazione ul {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  body.vesuvio .navigazione ul li a {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  body.vesuvio .navigazione ul img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+  }
+
+  /* HEADER */
+  body.vesuvio header {
+    height: 400px;
+    position: relative;
+  }
+
+  body.vesuvio .immagine-vesuvio {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 50px auto 0;
+    padding: 0;
+  }
+
+  body.vesuvio .immagine-vesuvio img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  body.vesuvio .immagine-vesuvio h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: var(--bianco);
+    text-align: center;
+    margin: 0;
+  }
+
+  body.vesuvio .immagine-vesuvio h2 {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--bianco);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 1rem; /* font piccolo come "Attività" */
+    padding: 20px;
+  }
+
+  main > * {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main h1, main h2, main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Titoli centrati */
+  }
+
+  main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify; /* Testo giustificato */
+  }
+
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
